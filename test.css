@@ -1,3 +1,16 @@
 .custom-form-description{
 display:none;
 }
+body{
+  background: black; //baseColorScheme
+}
+input.form-control{
+  color: red; //secondaryText
+}
+#submit-container button.submit.primary {
+    background-color: red !important; //actionColor
+}
+label.control-label{
+  color: green; //accentColor
+}
+
