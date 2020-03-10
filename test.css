@@ -3,6 +3,7 @@ display:none;
 }
 body{
   background: black; //baseColorScheme
+  color: white;
 }
 input.form-control{
   color: red; //secondaryText
