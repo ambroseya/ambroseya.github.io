@@ -56,6 +56,23 @@ span.help-block {
     clear: both;
     line-height: 3em;
 }
+input:focus, textarea:focus {
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    background: none;
+    border: none;
+    font-family: 'Open Sans', 'OpenSans', sans-serif;
+    padding: 12px 0;
+    border-bottom: 1px solid gray;
+    height: 1em;
+    overflow: hidden;
+    resize: none;
+    font-size: 12px;
+}
+
 
 label {
     clear: both;
