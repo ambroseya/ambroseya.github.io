@@ -15,6 +15,10 @@ label.control-label{
 .form-header img {
     max-width: 100%;
 }
+.formbuilder-field {
+    float: left;
+    width: 100%;
+}
 
 ul.nav.nav-tabs {
     display: none;
@@ -90,4 +94,109 @@ html::-webkit-scrollbar {
 /* Hide scrollbar for IE and Edge */
 html {
   -ms-overflow-style: none;
+}
+
+.formbuilder-field {
+    float: left;
+    width: 100%;
+}
+
+span.optionname {
+    color: gray;
+    text-transform: none;
+    font-size: 13px;
+}
+
+
+input[type="checkbox"]+span::after {
+    position: absolute;
+    left: -38px;
+    top: 1px;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    color: #343434;
+    font-family: fms;
+    font-size: 33px;
+    opacity: 0;
+    content: "\e2d7";
+    transition: .5s ease all;
+}
+input[type="checkbox"]+span::before, #mb-formbuilder-container [type=radio]+span::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-right: 12px;
+    width: 15px;
+    height: 15px;
+    border-radius: 9999px;
+    box-shadow: inset 0 0 0 1px #d2d2d2;
+    transition: .5s ease all;
+    content: "";
+    background-color: transparent;
+}
+input[type="checkbox"], #mb-formbuilder-container .checkbox-inline input[type=checkbox], #mb-formbuilder-container .radio input[type=radio], #mb-formbuilder-container .radio-inline input[type=radio] {
+   /* position: absolute; */
+ /*   margin-left: -20px;*/
+}
+input[type="checkbox"]+span, #mb-formbuilder-container [type=radio]+span {
+    font-family: Montserrat,sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: block;
+    position: relative;
+    vertical-align: middle;
+    font-weight: 400;
+    cursor: pointer;
+    color: #898989;
+    text-transform: uppercase;
+    padding-left: 24px;
+}input[type="checkbox"]{
+    margin: 4px 0 0;
+    line-height: normal;
+    box-sizing: border-box;
+    padding: 0;
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox label {
+    margin-top: 0;
+    text-transform: none;
+    padding: 0;
+    height: 22px;
+}
+
+span.optionname.ng-binding {
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+span.optionname {
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+}
+
+.col-sm-6.col-xs-12 {
+    clear: both;
+    float: left;
+    display: block;
+    position: relative;
+}
+
+.form-group.ng-scope.has-success {
+    float: left;
+    clear: both;
+}
+
+.checkbox {
+    clear: both;
+    display: block;
+    float: left;
 }
