@@ -162,7 +162,7 @@ input[type="checkbox"]+span, input[type="radio"]+span {
     opacity: 0;
 }
 
-.checkbox label {
+.checkbox label, .radio label {
     margin-top: 0;
     text-transform: none;
     padding: 0;
@@ -186,12 +186,12 @@ span.optionname {
     position: relative;
 }
 
-.form-group.ng-scope.has-success {
+.form-group.has-success {
     float: left;
     clear: both;
 }
 
-.checkbox {
+.checkbox, .radio {
     clear: both;
     display: block;
     float: left;
