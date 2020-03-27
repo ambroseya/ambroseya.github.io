@@ -286,4 +286,8 @@ button.btn.btn-lg.mb-lg.btn-primary.submit.ng-binding {
 div#mb-formbuilder-container {
     max-height: 391px;
     overflow: auto;
+  -ms-overflow-style: none;
+}
+div#mb-formbuilder-container::-webkit-scrollbar {
+  display: none;
 }
