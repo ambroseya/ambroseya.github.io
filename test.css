@@ -222,7 +222,9 @@ button.btn.btn-primary.btn-bevel.date {
 .field-date input::placeholder{
   color: transparent;
 }
-
+.field-date input {
+    width: 197px;
+}
 select {
     float: left;
     margin-top: 20px;
@@ -241,4 +243,28 @@ select {
 .radio ~ span.help-block, .checkbox ~ span.help-block {
     border-top: 1px solid gray;
     width: 100%;
+}
+.fieldset-header h3 {
+    font-size: 10px !important;
+    font-weight: 400;
+    color: green;
+}
+
+.fieldset {
+    padding: 5px;
+}
+
+.fieldset div:first-child label {
+    margin-top: 0;
+}
+
+.fieldset ~ .btn-action.btn-add.col-xs-12.text-center.ng-scope button {
+    background: transparent;
+    border: none;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 10px;
+    line-height: 3em;
+    text-transform: uppercase;
 }
