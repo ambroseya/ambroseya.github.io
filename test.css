@@ -160,6 +160,7 @@ input[type="checkbox"]+span, input[type="radio"]+span {
     padding: 0;
     z-index: -1;
     opacity: 0;
+    float: left;
 }
 
 .checkbox label, .radio label {
@@ -195,4 +196,8 @@ span.optionname {
     clear: both;
     display: block;
     float: left;
+}
+
+.row > .radio:first-child, .row >.checkbox:first-child {
+    padding-top: 20px;
 }
