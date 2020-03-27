@@ -43,3 +43,15 @@ body {
 .form-group {
     padding-top: 21px;
 }
+
+span.help-text-top {
+    display: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+html {
+  -ms-overflow-style: none;
+}
