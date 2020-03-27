@@ -268,3 +268,22 @@ select {
     line-height: 3em;
     text-transform: uppercase;
 }
+
+div#submit-container {position: fixed;top: 347px;display: block;right: 5px;}
+
+button.btn.btn-lg.mb-lg.btn-primary.submit.ng-binding {
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 10px;
+    line-height: 25px;
+    opacity: .8;
+}
+
+
+div#mb-formbuilder-container {
+    max-height: 391px;
+    overflow: auto;
+}
