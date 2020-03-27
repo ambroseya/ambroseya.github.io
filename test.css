@@ -201,3 +201,25 @@ span.optionname {
 .row > .radio:first-child, .row >.checkbox:first-child {
     padding-top: 20px;
 }
+button.btn.btn-primary.btn-bevel.date {
+    display: none;
+}
+
+.field-date label {
+  position: relative;
+}
+
+.field-date label:after {
+  content: 'No date selected';
+  position: absolute;
+  left: 0px;
+  top: 23px;
+  color: #bbb;
+  text-transform: none;
+  width:245px;
+}
+
+.field-date input::placeholder{
+  color: transparent;
+}
+
