@@ -1,3 +1,6 @@
+:root {
+  --accent-color: green;
+}
 body{
   background: black; //baseColorScheme
   color: white;
@@ -9,7 +12,7 @@ input.form-control{
     background-color: red !important; //actionColor
 }
 label.control-label{
-  color: green; //accentColor
+  color: var(--accent-color);
 }
 
 .form-header img {
@@ -251,7 +254,7 @@ select {
 .fieldset-header h3 {
     font-size: 10px !important;
     font-weight: 400;
-    color: green;
+    color: var(--accent-color);
 }
 
 .fieldset {
@@ -367,7 +370,7 @@ select ~ span.help-block.ng-binding.ng-scope {
 .formbuilder-field[field-template-name=address] span.fieldname, .formbuilder-field[field-template-name=person-name] span.fieldname, div[data-qa=field-person-name] span.fieldname, div[data-qa=field-address] span.fieldname{
     font-size: 10px !important;
     font-weight: 400;
-    color: green;
+    color: var(--accent-color);
 }
 
 
@@ -400,7 +403,7 @@ select ~ span.help-block.ng-binding.ng-scope {
 }
 
 .col-xs-12.section-header h3 {
-    color: green;
+    color: var(--accent-color);
     font-size: 13px;
 }
 
@@ -440,7 +443,7 @@ input.hidden {
 
 
 .formbuilder-field[field-template-name=fund-dropdown] span.fieldname, .formbuilder-field[field-template-name=payment-list-dropdown] span.fieldname,  div[data-qa=field-fund-dropdown] span.fieldname {
-    color: green;
+    color: var(--accent-color);
     font-size: 10px;
     font-weight: 400;
     position: relative;
