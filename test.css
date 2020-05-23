@@ -1,10 +1,10 @@
 :root {
-  --accent-color: green;
-  --secondary-text: gray;
-  --primary-text: red;
-  --action-color: blue;
-  --base-color-scheme-background: black;
-  --base-color-scheme-text: white;
+  --accent-color: blue;
+  --secondary-text: pink;
+  --primary-text: gray;
+  --action-color: green;
+  --base-color-scheme-background: white;
+  --base-color-scheme-text: black;
 }
 body{
   background: var(--base-color-scheme-background);
