@@ -185,7 +185,7 @@ span.optionname {
     float: left;
     display: block;
     position: relative;
-  width:100%;
+    width: 100%;
 }
 
 .form-group.has-success {
@@ -326,11 +326,22 @@ payment-method.animation-fade.ng-scope.ng-isolate-scope {
 .formbuilder-field[field-template-name=radio] .radio {
     display: none;
 }
-.radio ~ span.help-block{
+.radio ~ span.help-block, select ~ span.help-block{
   margin-top:30px;
 }
 .radio ~ span.help-block::before {content: 'None Selected';position: absolute;top: 34px;}
-
+select ~ span.help-block::before {
+    content: 'None Selected';
+    position: absolute;
+    top: 4px;
+}
+select {
+    display: none;
+}
+select ~ span.help-block.ng-binding.ng-scope {
+    border-top: 1px solid;
+    width: 100%;
+}
 
 .row {
     position: relative !important;
