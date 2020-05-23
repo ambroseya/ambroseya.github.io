@@ -4,6 +4,7 @@
   --primary-text: gray;
   --action-color: green;
   --base-color-scheme-background: black;
+  --base-color-scheme-fieldset-background: #343434;
   --base-color-scheme-text: white;
 }
 body{
@@ -427,7 +428,7 @@ input.hidden {
 
 .formbuilder-field .formbuilder-field {
     display: block;
-    background: var(--base-color-scheme-background);
+    background: var(--base-color-scheme-fieldset-background);
     opacity: .8;
     padding: 5px;
     margin-left: -5px;
