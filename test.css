@@ -528,3 +528,17 @@ input[type="checkbox"]+span, input[type="radio"]+span {
 .phone-addon .intl-tel-input {
     width: 100%;
 }
+
+div#submit-container button {
+    background: lightblue;
+    float: right;
+    margin-right:10px
+}
+
+.secure-payment-info {
+    display: none;
+}
+
+.giving-provider-info {
+    display: none;
+}
