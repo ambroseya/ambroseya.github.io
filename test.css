@@ -10,7 +10,7 @@ body{
   background: var(--base-color-scheme-background);
   color: var(--base-color-scheme-text);
 }
-input.form-control{
+input.form-control, input::placeholder{
   color: var(--secondary-text);
 }
 
@@ -156,7 +156,7 @@ input[type="checkbox"]+span, input[type="radio"]+span {
     vertical-align: middle;
     font-weight: 400;
     cursor: pointer;
-    color: #898989;
+    color: var(--secondary-text);
     text-transform: uppercase;
     padding-left: 24px;
 }input[type="checkbox"], input[type="radio"]{
