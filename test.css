@@ -362,23 +362,32 @@ select ~ span.help-block.ng-binding.ng-scope {
 .formbuilder-field[field-template-name=phone-number] .intl-tel-input {
     width: 100%;
 }
-.formbuilder-field[field-template-name=person-name] span.fieldname.ng-binding {
+
+.formbuilder-field[field-template-name=address] span.fieldname, .formbuilder-field[field-template-name=person-name] span.fieldname{
     font-size: 10px !important;
     font-weight: 400;
     color: green;
 }
 
-.formbuilder-field[field-template-name=person-name] label {
+
+.formbuilder-field[field-template-name=address] label, .formbuilder-field[field-template-name=person-name] label {
     color: gray;
     text-transform: capitalize;
     margin:5px 0;
 }
 
-.formbuilder-field[field-template-name=person-name] .help-block {
+
+.formbuilder-field[field-template-name=address] .help-block, .formbuilder-field[field-template-name=person-name] .help-block {
     border-top: 1px solid gray;
     width: 100%;
     margin-top:5px;
 }
-.formbuilder-field[field-template-name=person-name] input {
+
+.formbuilder-field[field-template-name=address] input, .formbuilder-field[field-template-name=person-name] input {
     display: none;
+}
+
+.col-xs-6.col-sm-3.form-group {
+    width: 50%;
+    float: left;
 }
