@@ -322,3 +322,27 @@ payment-method.animation-fade.ng-scope.ng-isolate-scope {
 .btn-group.dropdown {
     display: none;
 }
+.formbuilder-field[field-template-name=radio] .radio {
+    display: none;
+}
+
+.radio ~ span.help-block::before {content: 'None Selected';position: absolute;top: 34px;}
+
+
+.row {
+    position: relative !important;
+}
+
+.flag-container {
+    display: none;
+}
+
+.intl-tel-input input, .intl-tel-input input[type=text], .intl-tel-input input[type=tel] {
+    padding-left: 0;
+    width: 100%;
+    position: relative;
+}
+
+.intl-tel-input {
+    width: 100%;
+}
