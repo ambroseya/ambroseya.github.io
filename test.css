@@ -1,16 +1,19 @@
 :root {
   --accent-color: green;
+  --secondary-text: gray;
+  --primary-text: red;
+  --action-color: blue;
+  --base-color-scheme-background: black;
+  --base-color-scheme-text: white;
 }
 body{
-  background: black; //baseColorScheme
-  color: white;
+  background: var(--base-color-scheme-background);
+  color: var(--base-color-scheme-text);
 }
 input.form-control{
-  color: red; //secondaryText
+  color: var(--primary-text);
 }
-#submit-container button.submit.primary {
-    background-color: red !important; //actionColor
-}
+
 label.control-label{
   color: var(--accent-color);
 }
@@ -41,14 +44,14 @@ body {
     font-size: 12.25px;
     display: block;
     position: relative;
-    color: red;
+    color: var(--primary-text);
 }
 .col-xs-12.text {
     text-transform: none;
 }
 input.form-control {
     border: 0;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--secondary-text);
     background: transparent;
     font-size: 12px;
     line-height: 2.5em;
@@ -57,7 +60,7 @@ input.form-control {
 }
 
 span.help-block {
-    color: gray;
+    color: var(--secondary-text);
     text-transform: none;
     float: left;
     clear: both;
@@ -73,7 +76,7 @@ textarea {
     border: none;
     font-family: 'Open Sans', 'OpenSans', sans-serif;
     padding: 12px 0;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--secondary-text);
     height: 1em;
     overflow: hidden;
     resize: none;
@@ -105,7 +108,7 @@ html {
 }
 
 span.optionname {
-    color: gray;
+    color: var(--secondary-text);
     text-transform: none;
     font-size: 13px;
 }
@@ -218,7 +221,7 @@ button.btn.btn-primary.btn-bevel.date {
   position: absolute;
   left: 0px;
   top: 23px;
-  color: gray;
+  color: var(--secondary-text);
   text-transform: none;
   width:245px;
 }
@@ -237,9 +240,9 @@ select {
     margin-top: 20px;
     background: transparent;
     border: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--secondary-text);
     width: 197px;
-    color: gray;
+    color: var(--secondary-text);
     font-size: 10px;
     padding: .5em 0;
     -webkit-appearance: none;
@@ -248,7 +251,7 @@ select {
 }
 
 .radio ~ span.help-block, .checkbox ~ span.help-block {
-    border-top: 1px solid gray;
+    border-top: 1px solid var(--secondary-text);
     width: 100%;
 }
 .fieldset-header h3 {
@@ -268,7 +271,7 @@ select {
 .fieldset ~ .btn-action.btn-add.col-xs-12.text-center.ng-scope button {
     background: transparent;
     border: none;
-    color: white;
+    color: var(--base-color-scheme-text);
     text-align: center;
     width: 100%;
     font-size: 10px;
@@ -279,8 +282,8 @@ select {
 div#submit-container {position: fixed;top: 347px;display: block;right: 5px;}
 
 button.btn.btn-lg.mb-lg.btn-primary.submit.ng-binding {
-    background: blue;
-    color: white;
+    background: var(--action-color);
+    color: var(--base-color-scheme-text);
     border: none;
     border-radius: 5px;
     padding: 0 10px;
@@ -375,14 +378,14 @@ select ~ span.help-block.ng-binding.ng-scope {
 
 
 .formbuilder-field[field-template-name=address] label, .formbuilder-field[field-template-name=person-name] label, div[data-qa=field-address] label, div[data-qa=field-person-name] label {
-    color: gray;
+    color: var(--secondary-text);
     text-transform: capitalize;
     margin:5px 0;
 }
 
 
 .formbuilder-field[field-template-name=address] .help-block, div[data-qa=field-address] .help-block .formbuilder-field[field-template-name=person-name] .help-block, div[data-qa=field-person-name] .help-block {
-    border-top: 1px solid gray !Important;
+    border-top: 1px solid var(--secondary-text) !Important;
     width: 100%;
     margin-top:5px;
 }
@@ -408,14 +411,14 @@ select ~ span.help-block.ng-binding.ng-scope {
 }
 
 .formbuilder-field[field-template-name=static] p, div[data-qa=field-static] p {
-    color: gray;
+    color: var(--secondary-text);
     text-transform: none;
 }
 
 hr.divider {
     margin: 10px 0;
-    color: gray;
-    border-top: 1px solid gray !important;
+    color: var(--secondary-text);
+    border-top: 1px solid var(--secondary-text) !important;
     border-bottom: 0px !important;
 }
 input.hidden {
@@ -424,7 +427,8 @@ input.hidden {
 
 .formbuilder-field .formbuilder-field {
     display: block;
-    background: #343434;
+    background: var(--base-color-scheme-background);
+    opacity: .8;
     padding: 5px;
     margin-left: -5px;
 }.formbuilder-field[field-template-name=payment-list-button] .radio, div[data-qa=field-payment-list-button] .radio{
@@ -458,12 +462,12 @@ input.hidden {
 .formbuilder-field[field-template-name=fund-dropdown] span.fieldname::after, .formbuilder-field[field-template-name=payment-list-dropdown] span.fieldname::after, div[data-qa=field-fund-dropdown] span.fieldname::after{
     content:'No Fund Selected';
     position: absolute;
-    color:   gray;
+    color: var(--secondary-text);
     text-transform: none;
     width: 100%;
     left:0;
     top:15px;
-    border-bottom:1px solid gray;
+    border-bottom:1px solid var(--secondary-text);
     padding: 5px 0;
 }
 
@@ -492,7 +496,7 @@ input[type="checkbox"]+span, input[type="radio"]+span {
 
 .formbuilder-field[field-template-name=payment-user] .input-group-addon, div[data-qa=field-payment-user] .input-group-addon {
     position: absolute;
-    color: gray;
+    color: var(--secondary-text);
     font-size: 10px;
     top: 8px;
 }
@@ -500,14 +504,14 @@ input[type="checkbox"]+span, input[type="radio"]+span {
 
 .formbuilder-field[field-template-name=payment-user] input, div[data-qa=field-payment-user] input {
     padding-left: 6px;
-    color: gray;
+    color: var(--secondary-text);
     font-size: 10px
 }
 
 
 .formbuilder-field[field-template-name=payment-hidden]  p.payment-hidden-text, div[data-qa=field-payment-hidden] p.payment-hidden-text {
-    color: gray;
-    border-bottom: 1px solid gray;
+    color: var(--secondary-text);
+    border-bottom: 1px solid var(--secondary-text);
     font-size: 10px;
     line-height: 20px;
     padding-bottom: 5px;
@@ -533,7 +537,7 @@ input[type="checkbox"]+span, input[type="radio"]+span {
 }
 
 div#submit-container button {
-    background: lightblue;
+    background: var(--action-color);
     float: right;
     margin-right:10px
 }
