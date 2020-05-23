@@ -3,8 +3,8 @@
   --secondary-text: pink;
   --primary-text: gray;
   --action-color: green;
-  --base-color-scheme-background: white;
-  --base-color-scheme-text: black;
+  --base-color-scheme-background: black;
+  --base-color-scheme-text: white;
 }
 body{
   background: var(--base-color-scheme-background);
@@ -281,9 +281,9 @@ select {
 
 div#submit-container {position: fixed;top: 347px;display: block;right: 5px;}
 
-button.btn.btn-lg.mb-lg.btn-primary.submit.ng-binding {
+button.submit {
     background: var(--action-color);
-    color: var(--base-color-scheme-text);
+    color: white;
     border: none;
     border-radius: 5px;
     padding: 0 10px;
