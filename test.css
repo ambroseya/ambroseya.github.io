@@ -333,6 +333,7 @@ payment-method.animation-fade.ng-scope.ng-isolate-scope {
   margin-top:30px;
 }
 .radio ~ span.help-block::before {content: 'None Selected';position: absolute;top: 34px;}
+.fieldset .radio ~ span.help-block::before{top:15px;}
 select ~ span.help-block::before {
     content: 'None Selected';
     position: absolute;
@@ -363,27 +364,27 @@ select ~ span.help-block.ng-binding.ng-scope {
     width: 100%;
 }
 
-.formbuilder-field[field-template-name=address] span.fieldname, .formbuilder-field[field-template-name=person-name] span.fieldname, div[data-qa=field-address] span.fieldname{
+.formbuilder-field[field-template-name=address] span.fieldname, .formbuilder-field[field-template-name=person-name] span.fieldname, div[data-qa=field-person-name] span.fieldname, div[data-qa=field-address] span.fieldname{
     font-size: 10px !important;
     font-weight: 400;
     color: green;
 }
 
 
-.formbuilder-field[field-template-name=address] label, .formbuilder-field[field-template-name=person-name] label, div[data-qa=field-address] label {
+.formbuilder-field[field-template-name=address] label, .formbuilder-field[field-template-name=person-name] label, div[data-qa=field-address] label, div[data-qa=field-person-name] label {
     color: gray;
     text-transform: capitalize;
     margin:5px 0;
 }
 
 
-.formbuilder-field[field-template-name=address] .help-block, div[data-qa=field-address] .help-block .formbuilder-field[field-template-name=person-name] .help-block {
+.formbuilder-field[field-template-name=address] .help-block, div[data-qa=field-address] .help-block .formbuilder-field[field-template-name=person-name] .help-block, div[data-qa=field-person-name] .help-block {
     border-top: 1px solid gray !Important;
     width: 100%;
     margin-top:5px;
 }
 
-.formbuilder-field[field-template-name=address] input, div[data-qa=field-address] input, .formbuilder-field[field-template-name=person-name] input {
+.formbuilder-field[field-template-name=address] input, div[data-qa=field-address] input, .formbuilder-field[field-template-name=person-name] input, div[data-qa=field-person-name] input {
     display: none;
 }
 
@@ -403,7 +404,7 @@ select ~ span.help-block.ng-binding.ng-scope {
     font-size: 13px;
 }
 
-.formbuilder-field[field-template-name=static] p.ng-binding {
+.formbuilder-field[field-template-name=static] p, div[data-qa=field-static] p {
     color: gray;
     text-transform: none;
 }
@@ -423,22 +424,22 @@ input.hidden {
     background: #343434;
     padding: 5px;
     margin-left: -5px;
-}.formbuilder-field[field-template-name=payment-list-button] .radio {
+}.formbuilder-field[field-template-name=payment-list-button] .radio, div[data-qa=field-payment-list-button] .radio{
     display: none;
 }
 
-.formbuilder-field[field-template-name=fund-dropdown] select {
-    display: none;
-}
-
-
-
-.formbuilder-field[field-template-name=fund-dropdown] .fund-group .form-group {
+.formbuilder-field[field-template-name=fund-dropdown] select,  div[data-qa=field-fund-dropdown] select {
     display: none;
 }
 
 
-.formbuilder-field[field-template-name=fund-dropdown] span.fieldname, .formbuilder-field[field-template-name=payment-list-dropdown] span.fieldname {
+
+.formbuilder-field[field-template-name=fund-dropdown] .fund-group .form-group, div[data-qa=field-fund-dropdown] .fund-group .form-group {
+    display: none;
+}
+
+
+.formbuilder-field[field-template-name=fund-dropdown] span.fieldname, .formbuilder-field[field-template-name=payment-list-dropdown] span.fieldname,  div[data-qa=field-fund-dropdown] span.fieldname {
     color: green;
     font-size: 10px;
     font-weight: 400;
@@ -447,11 +448,11 @@ input.hidden {
     display: block;
     padding-bottom: 27px;
 }
-.formbuilder-field[field-template-name=fund-dropdown] span.fieldname{
+.formbuilder-field[field-template-name=fund-dropdown] span.fieldname,  div[data-qa=field-fund-dropdown] span.fieldname{
     padding-bottom:12px;
 }
 
-.formbuilder-field[field-template-name=fund-dropdown] span.fieldname::after, .formbuilder-field[field-template-name=payment-list-dropdown] span.fieldname::after{
+.formbuilder-field[field-template-name=fund-dropdown] span.fieldname::after, .formbuilder-field[field-template-name=payment-list-dropdown] span.fieldname::after, div[data-qa=field-fund-dropdown] span.fieldname::after{
     content:'No Fund Selected';
     position: absolute;
     color:   gray;
@@ -471,7 +472,7 @@ label.col-xs-12.control-label {
     width: 100%;
 }
 
-.formbuilder-field[field-template-name=payment-list-radio] .radio {
+.formbuilder-field[field-template-name=payment-list-radio] .radio, div[data-qa=field-payment-list-radio] .radio {
     display: none;
 }
 
@@ -486,7 +487,7 @@ input[type="checkbox"]+span, input[type="radio"]+span {
 
 
 
-.formbuilder-field[field-template-name=payment-user] .input-group-addon {
+.formbuilder-field[field-template-name=payment-user] .input-group-addon, div[data-qa=field-payment-user] .input-group-addon {
     position: absolute;
     color: gray;
     font-size: 10px;
@@ -494,14 +495,14 @@ input[type="checkbox"]+span, input[type="radio"]+span {
 }
 
 
-.formbuilder-field[field-template-name=payment-user] input {
+.formbuilder-field[field-template-name=payment-user] input, div[data-qa=field-payment-user] input {
     padding-left: 6px;
     color: gray;
     font-size: 10px
 }
 
 
-.formbuilder-field[field-template-name=payment-hidden]  p.payment-hidden-text {
+.formbuilder-field[field-template-name=payment-hidden]  p.payment-hidden-text, div[data-qa=field-payment-hidden] p.payment-hidden-text {
     color: gray;
     border-bottom: 1px solid gray;
     font-size: 10px;
@@ -515,7 +516,7 @@ input[type="checkbox"]+span, input[type="radio"]+span {
 
 
 
-.formbuilder-field[field-template-name=payment-hidden] span.fieldname {
+.formbuilder-field[field-template-name=payment-hidden] span.fieldname, div[dat-qa=field-payment-hidden] span.fieldname{
     display: block;
     margin-bottom: 6px;
 }
