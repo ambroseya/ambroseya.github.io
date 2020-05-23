@@ -391,3 +391,24 @@ select ~ span.help-block.ng-binding.ng-scope {
     width: 50%;
     float: left;
 }
+
+.emptyspace {
+    height: 15px;
+}
+
+.col-xs-12.section-header h3 {
+    color: green;
+    font-size: 13px;
+}
+
+.formbuilder-field[field-template-name=static] p.ng-binding {
+    color: gray;
+    text-transform: none;
+}
+
+hr.divider {
+    margin: 10px 0;
+    color: gray;
+    border-top: 1px solid gray !important;
+    border-bottom: 0px !important;
+}
