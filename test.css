@@ -11,7 +11,7 @@ body{
   color: var(--base-color-scheme-text);
 }
 input.form-control{
-  color: var(--primary-text);
+  color: var(--secondary-text);
 }
 
 label.control-label{
@@ -547,5 +547,8 @@ div#submit-container button {
 }
 
 .giving-provider-info {
+    display: none;
+}
+row.ministry-id-or.ng-scope {
     display: none;
 }
