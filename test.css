@@ -354,12 +354,11 @@ select ~ span.help-block.ng-binding.ng-scope {
     display: none;
 }
 
-.intl-tel-input input, .intl-tel-input input[type=text], .intl-tel-input input[type=tel] {
+.formbuilder-field[field-template-name=phone-number] .intl-tel-input input, .formbuilder-field[field-template-name=phone-number] .intl-tel-input input[type=text], .formbuilder-field[field-template-name=phone-number] .intl-tel-input input[type=tel] {
     padding-left: 0;
-    width: 100%;
-    position: relative;
 }
 
-.intl-tel-input {
+
+.formbuilder-field[field-template-name=phone-number] .intl-tel-input {
     width: 100%;
 }
