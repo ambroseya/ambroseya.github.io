@@ -215,9 +215,12 @@ button.btn.btn-primary.btn-bevel.date {
   position: absolute;
   left: 0px;
   top: 23px;
-  color: #bbb;
+  color: gray;
   text-transform: none;
   width:245px;
+}
+.formbuilder-field[field-template-name=date] input {
+    width: 100%;
 }
 
 .field-date input::placeholder{
