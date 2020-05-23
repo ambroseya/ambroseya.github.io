@@ -185,6 +185,7 @@ span.optionname {
     float: left;
     display: block;
     position: relative;
+  width:100%;
 }
 
 .form-group.has-success {
