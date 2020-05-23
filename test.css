@@ -363,29 +363,31 @@ select ~ span.help-block.ng-binding.ng-scope {
     width: 100%;
 }
 
-.formbuilder-field[field-template-name=address] span.fieldname, .formbuilder-field[field-template-name=person-name] span.fieldname{
+.formbuilder-field[field-template-name=address] span.fieldname, .formbuilder-field[field-template-name=person-name] span.fieldname, div[data-qa=field-address] span.fieldname{
     font-size: 10px !important;
     font-weight: 400;
     color: green;
 }
 
 
-.formbuilder-field[field-template-name=address] label, .formbuilder-field[field-template-name=person-name] label {
+.formbuilder-field[field-template-name=address] label, .formbuilder-field[field-template-name=person-name] label, div[data-qa=field-address] label {
     color: gray;
     text-transform: capitalize;
     margin:5px 0;
 }
 
 
-.formbuilder-field[field-template-name=address] .help-block, .formbuilder-field[field-template-name=person-name] .help-block {
-    border-top: 1px solid gray;
+.formbuilder-field[field-template-name=address] .help-block, div[data-qa=field-address] .help-block .formbuilder-field[field-template-name=person-name] .help-block {
+    border-top: 1px solid gray !Important;
     width: 100%;
     margin-top:5px;
 }
 
-.formbuilder-field[field-template-name=address] input, .formbuilder-field[field-template-name=person-name] input {
+.formbuilder-field[field-template-name=address] input, div[data-qa=field-address] input, .formbuilder-field[field-template-name=person-name] input {
     display: none;
 }
+
+
 
 .col-xs-6.col-sm-3.form-group {
     width: 50%;
@@ -421,8 +423,7 @@ input.hidden {
     background: #343434;
     padding: 5px;
     margin-left: -5px;
-}
-.formbuilder-field[field-template-name=payment-list-button] .radio {
+}.formbuilder-field[field-template-name=payment-list-button] .radio {
     display: none;
 }
 
@@ -483,6 +484,8 @@ input[type="checkbox"]+span, input[type="radio"]+span {
     text-transform: none;
 }
 
+
+
 .formbuilder-field[field-template-name=payment-user] .input-group-addon {
     position: absolute;
     color: gray;
@@ -515,4 +518,12 @@ input[type="checkbox"]+span, input[type="radio"]+span {
 .formbuilder-field[field-template-name=payment-hidden] span.fieldname {
     display: block;
     margin-bottom: 6px;
+}
+
+.formbuilder-field[data-qa=static] {
+    display: none;
+}
+
+.phone-addon .intl-tel-input {
+    width: 100%;
 }
